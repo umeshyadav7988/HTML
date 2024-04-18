@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html>
+<!-- <head>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script> -->
+<!--  $(document).ready(function(){ -->
+<!--   $("input").focus(function(){ -->
+    <!--  $(this).css("background-color", "yellow");
+<!--   }); -->
+<!--   $("input").blur(function(){ -->
+    <!--  $(this).css("background-color", "green"); 
+    }); 
+  });
+ </script>
+ </head> 
+ <body> 
+ Name: <input type="text" name="fullname"><br>
+</body>
+</html>-->
+
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<!-- <head> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<!-- <script> -->
+<!-- // $(document).ready(function(){ -->
+<!-- //   $("p").on({ -->
+    <!-- // mouseenter: function(){ -->
+    <!-- //   $(this).css("background-color", "lightgray"); -->
+    <!-- // },   -->
+    <!-- // mouseleave: function(){ -->
+    <!-- //   $(this).css("background-color", "lightblue"); -->
+    <!-- // },  -->
+    <!-- // click: function(){ -->
+    <!-- //   $(this).css("background-color", "yellow"); -->
+    <!-- // }   -->
+<!-- //   }); -->
+<!-- // }); -->
+<!-- </script> -->
+<!-- </head> -->
+<!-- <body> -->
+<!--  -->
+<!-- <p>Click or move the mouse pointer over this paragraph.</p> -->
+<!--  -->
+<!-- </body> -->
+<!-- </html> -->
+<!--  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</body>
+</html>
+

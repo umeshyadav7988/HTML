@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/
+jquery.min.js"></script>
+</head>
+<body style="background-color: rgb(103, 223, 223);">
+
+    <button id="go">&raquo; Run</button>
+    <div id="block">Umesh Yadav</div>
+    <script>
+        $("#go").click(function(){
+            $("#block").animate({
+                width:"70%",
+                opacity:0.4,
+                marginLeft:"0.6in",
+                fontSize:"3em",
+                borderWidth:"10px",
+
+            },1500);
+        });
+    </script>
+    
+</body>
+</html>

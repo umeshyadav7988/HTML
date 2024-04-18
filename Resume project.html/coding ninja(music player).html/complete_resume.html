@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Resume </title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        /* Body Header */
+
+        #body-header {
+            height: 75vh;
+            opacity: 0.8;
+            background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 1.2rem;
+        }
+
+        /* Horizontal Lists */
+
+        .horizontal-list {
+            list-style: none;
+            padding-left: 0px;
+            margin: 0px;
+        }
+
+        .horizontal-list li {
+            display: inline-block;
+            margin: 0px 8px 8px 0px;
+            font-weight: 100;
+            font-size: 0.9rem;
+        }
+
+
+        .horizontal-list li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-menu li a {
+            transition: color 0.5s, border-bottom 4s;
+        }
+
+        .nav-menu li a:hover {
+            color: rgb(180, 170, 170);
+            border-bottom: 1px solid rgb(192, 43, 43);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Name and Social Icons*/
+
+        #name-social-container {
+            margin-top: 10vh;
+        }
+
+        #my-name {
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+
+        .social-icons li a i {
+            color: rgb(0, 4, 255);
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 50%;
+        }
+
+
+        .social-icons li a i:hover {
+            box-shadow: 0px 0px 6px 4px rgba(210, 231, 15, 0.3);
+        }
+
+        /* /About Section/ */
+        #about {
+            height: auto;
+            width: 100%;
+            position: relative;
+        }
+
+
+        #my-image {
+            height: 12rem;
+            width: 12rem;
+            margin: auto;
+            margin-top: -21vh;
+        }
+
+        #my-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 1px 1px 10px 2px lightgrey;
+
+        }
+
+        #about-para {
+            padding: 10px;
+            width: 70%;
+            line-height: 28px;
+            text-align: justify;
+            color: grey;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        .text-highlight {
+            color: #2857a4;
+            font-weight: 600;
+        }
+
+        .timeline {
+            /* //padding: 100px; */
+            position: relative;
+            width: auto;
+            border: 4px solid rgb(40, 236, 14);
+            margin: 10px;
+        }
+
+        .timeline-box {
+            position: relative;
+            width: 40%;
+            left: 5%;
+            min-height: 150px;
+            border: 2px solid rgb(238, 234, 31);
+            margin: 5px;
+            background-color: yellow;
+        }
+
+        .timeline-box:nth-child(2n) {
+            left: 53%;
+        }
+
+        .soumya {
+            /* border: 2px rgb(12, 11, 11) solid; */
+            padding: 10px;
+            text-align: justify;
+            color: white;
+        }
+
+        .timeline-divider {
+            position: absolute;
+            height: 70%;
+            width: 0%;
+            border: 3px dashed rgb(12, 228, 243);
+            top: 10%;
+            left: 50%;
+        }
+
+        .timeline-traveller {
+            position: sticky;
+            top: 15%;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="body-header">
+        <nav>
+
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">
+                    Umesh Yadav
+                </h1>
+            </div>
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="my-image">
+                <img
+                    src="https://circle.youthop.com/wp-content/uploads/2020/04/7-life-lessons-from-Tom-and-Jerry-cartoon.jpg">
+            </div>
+            <div id="about-para">
+                <p> Lorem Ipsum is simply dummy text of the printing and <span class="text-highlight"> typesetting
+                        industry</span>. Lorem Ipsum has been the industry's standard <span class="text-highlight">dummy
+                        text ever</span> since the 1500s, when an unknown printer took a galley of type and scrambled it
+                    to make a type specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s<span
+                        class="text-highlight"> with the release of Letraset</span> sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software like Aldus PageMaker including versions
+                    of Lorem Ipsum. </p>
+            </div>
+
+        </section>
+
+        <section id="skills">
+
+        </section>
+        <!-- style="background-color:rgb(217, 219, 217);border: rgb(116, 202, 218) 3px solid; margin: 20px; -->
+        <section id="Work Experience">
+
+            <div class="timeline">
+                <div style="text-align: center;"><a href="#Home"><b><i>Home</i></b></a></div>
+                <div class="section2" class="id" style="color:blue;">
+                    <span><i class="fas fa-briefcase"></i></span>
+                    <span><b><u><i>Work Experience</i></u></b></span>
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b>
+                            <i>Computer Science Engineering (CSE) is an engineering discipline that covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b><i>Computer Science Engineering (CSE) is an engineering discipline that
+                                covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b><i>Computer Science Engineering (CSE) is an engineering discipline that
+                                covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+                </div>
+                <div class="timeline-divider">
+                    <div class="timeline-traveller">
+                        <i class="fas fa-fighter-jet"></i>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+
+
+            <div class="timeline">
+                <div style="text-align: center;"><a href="#Home"><b><i>Home</i></b></a></div>
+                <div class="section2" class="id" style="color:blue;">
+                    <span><i class="fas fa-briefcase"></i></span>
+                    <span><b><u><i>Education </i></u></b></span>
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b>
+                            <i>Computer Science Engineering (CSE) is an engineering discipline that covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b><i>Computer Science Engineering (CSE) is an engineering discipline that
+                                covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div>
+                        <h3><b><i>Study:</i></b></h3>
+                    </div>
+                    <div class="soumya"><b><i>Computer Science Engineering (CSE) is an engineering discipline that
+                                covers
+                                several topics related to
+                                computation, programming languages, program design, computer hardware and software and
+                                integrates
+                                several fields of computer science.</i></b>
+                    </div>
+                </div>
+                <div class="timeline-divider">
+                    <div class="timeline-traveller">
+                        <i class="fas fa-fighter-jet"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="portfolio">
+
+        </section>
+
+        <section id="contact">
+
+        </section>
+
+    </main>
+    <header>
+        <div
+            style="border: rgb(163, 223, 22) 4px solid; background-image:url(https://kccmediahub.net/wp-content/uploads/2021/11/fireworks.jpg)  ; width: auto; height: 450px; margin: 10px;">
+            <div class="divha" style="text-align: center; margin-top: 140px;padding: 10px; font-size: 60px;">
+                <div>
+                    <i style="color: chartreuse;">H</i>
+                    <i style="color: rgb(237, 241, 241);">A</i>
+                    <i style="color: rgb(11, 232, 248);">PP</i>
+                    <i style="color: rgb(238, 38, 115); ">Y</i>
+                </div>
+                <div>
+                    <i style="color: rgb(34, 231, 132); ">NE</i>
+                    <i style="color: rgb(243, 57, 11);">W</i>
+                </div>
+                <div>
+                    <i style="color: cornsilk;">Y</i>
+                    <i style="color: gold;">EAR</i>
+                </div>
+                <div>
+                    <i style="color: white;">20</i>
+                    <i style="color: rgb(126, 240, 12);">22</i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br> <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

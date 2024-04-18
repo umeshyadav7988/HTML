@@ -1,0 +1,31 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Question 3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+      p{
+          padding:10px;
+      }
+      p.highlight{
+          background: red;
+      }
+  </style>
+  <script>
+    $(document).ready(function(){
+      $("p").mouseenter(function(){
+        $(this).addClass("highlight");
+      });
+      $("p").mouseenter(function(){
+        $(this).removeClass("highlight")
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="less">Less opacity</button>
+  <button id="more">More opacity</button>
+  <p> <img src="https://tse2.mm.bing.net/th?id=OIP.axh1xIcOZbwPl1gQFQ4rxgHaFM&pid=Api&P=0&w=218&h=153"></p>
+</body>
+</html>

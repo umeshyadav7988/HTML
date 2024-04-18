@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.
+min.js"></script>
+</head>
+<body>
+    <span id="result">&nbsp;</span>
+    <div style="background-color:aliceblue;"></div>
+    <div style="background-color:red;"></div>
+
+    <div style="background-color:green;"></div>
+    <div style="background-color:blue;"></div>
+
+    <script>
+        $("div").click(function(){
+            var color=$(this).css("background-color");
+            $("#result").html("that div is <span style='color:" + color + " ; ' > " + color "</span>.");
+        });
+    <script/>
+</body>
+</html>

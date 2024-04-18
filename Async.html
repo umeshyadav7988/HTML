@@ -1,0 +1,19 @@
+function f3() {
+  return new Promise(function (resolve, reject) {
+      setTimeout(function () {
+         msg.innerHTML += "<p>f3 is starting</p>";
+         msg.innerHTML += "<p>f3 is ending</p>";
+         resolve();
+      }, 1000);
+  })
+}
+ async function f2() {
+  msg.innerHTML += "<p>f2 is starting</p>";
+  await f1();
+  await f3();
+  msg.innerHTML += "<p>f2 is ending</p>";
+}
+ f2();
+</script>
+</body>
+</html>
